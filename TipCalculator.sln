@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TipCalculator", "TipCalculator\TipCalculator.pyproj", "{F1B3DDFC-ABF0-4EDD-B842-7EEAB6BC8BA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B3DDFC-ABF0-4EDD-B842-7EEAB6BC8BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B3DDFC-ABF0-4EDD-B842-7EEAB6BC8BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FC7C724-D26D-480B-8056-7956DE2784B4}
+	EndGlobalSection
+EndGlobal
