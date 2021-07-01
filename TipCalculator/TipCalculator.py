@@ -11,6 +11,7 @@ status = True
 
 def tip_function(total_cost, request):
     global final_tip
+    global status
 
     if request == 1:
         final_tip = total_cost * FIFTEEN
@@ -20,14 +21,18 @@ def tip_function(total_cost, request):
         final_tip = total_cost * TWENTY
     else:
         #Check to see if Percentage or decimal - TASK
-        final_tip = total_cost * (request/100)
+        custom = int(input("What's the custom tip (As percentage): "))
+        custom = custom / 100
+        final_tip = total_cost*custom
+    
+    #status = False
 
-def input_validation(request):
+#def input_validation(request):
+
 
 
 
 def main():
-
     while status:
         total_cost = float(input("Please enter the final amount: "))
         print("Select one of the following options")
@@ -36,13 +41,16 @@ def main():
         print(f"3 - {math.trunc(100*TWENTY)}% \n")
         print(f"4 - Custom Amount \n")
         #Menu gets reprompted when failed check ; maybe move loop here
-        request = input("")
+        request = int(input(""))
+        #Loop was moved here to see if the functionality works but needs to move out for input validation
+        tip_function(total_cost, request)
+        print (f"For ${total_cost}, the tip amount is : ${final_tip}\n")
 
     #Validate input - Check for non string - TASK
 
 
-    tip_function(total_cost, request)
-    print (f"For {total_cost}, the tip amount is : ${final_tip}")
+    #tip_function(total_cost, request)
+    #print (f"For {total_cost}, the tip amount is : ${final_tip}")
 
 
 
